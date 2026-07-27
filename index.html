@@ -1,13 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>y</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamCraft AI</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      text-align: center;
+    }
+
+    .hero {
+      padding: 100px 20px;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #cbd5e1;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      margin: 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .btn-primary {
+      background: #3b82f6;
+      color: white;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 1px solid #3b82f6;
+      color: #3b82f6;
+    }
+
+    section {
+      padding: 100px 20px;
+      background: #1e293b;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO SECTION -->
+  <div class="hero">
+    <h1>Welcome to DreamCraft AI ✨</h1>
+    <p>Create amazing AI content easily</p>
+
+    <!-- FIXED BUTTONS -->
+    <button class="btn btn-primary" onclick="startJourney()">Start your journey</button>
+    <button class="btn btn-secondary" onclick="scrollToSection()">Learn more</button>
+  </div>
+
+  <!-- SECOND SECTION -->
+  <section id="learn">
+    <h2>About This App</h2>
+    <p>This app helps you generate AI-based content quickly and easily.</p>
+  </section>
+
+  <!-- SCRIPT -->
+  <script>
+    function startJourney() {
+      alert("Your journey has started 🚀");
+      // yahan future me tum dusra page link kar sakti ho
+      // window.location.href = "app.html";
+    }
+
+    function scrollToSection() {
+      document.getElementById("learn").scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  </script>
+
+</body>
 </html>
