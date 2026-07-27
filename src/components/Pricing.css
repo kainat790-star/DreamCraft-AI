@@ -1,0 +1,67 @@
+/* Title */
+.pricing-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.pricing-subtitle {
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 50px;
+}
+
+/* Grid */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Card */
+.pricing-card {
+  text-align: center;
+  position: relative;
+}
+
+/* Highlight Plan */
+.highlight {
+  border: 2px solid #7c3aed;
+  transform: scale(1.05);
+}
+
+/* Price */
+.price {
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+/* Desc */
+.desc {
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+/* List */
+ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin: 8px 0;
+  color: #cbd5f5;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}

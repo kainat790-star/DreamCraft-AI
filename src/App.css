@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #0f172a;
+  color: white;
+  overflow-x: hidden;
+}
+
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* 🌟 Glow Background */
+.glow {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  filter: blur(120px);
+  z-index: 0;
+}
+
+.glow1 {
+  top: -100px;
+  right: -100px;
+  background: rgba(59, 130, 246, 0.5);
+}
+
+.glow2 {
+  bottom: -100px;
+  left: -100px;
+  background: rgba(6, 182, 212, 0.5);
+}
+
+/* Sections */
+section {
+  position: relative;
+  z-index: 1;
+  padding: 80px 20px;
+}
+
+/* ✨ Animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}

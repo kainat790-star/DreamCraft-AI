@@ -1,0 +1,98 @@
+.hero {
+  text-align: center;
+  margin-top: 100px;
+  padding: 20px;
+  position: relative;
+z-index: 1;
+}
+
+/* Title */
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 3.75rem);
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Description */
+.hero-text {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  color: #cbd5e1;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Buttons container */
+.hero-buttons {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Base button */
+.hero-btn {
+  padding: 14px 30px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+/* Primary button */
+.hero-btn.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.hero-btn.primary:hover {
+  background: #1d4ed8;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+}
+
+/* Secondary button */
+.hero-btn.secondary {
+  background: transparent;
+  color: white;
+  border: 1px solid #475569;
+}
+
+.hero-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-3px);
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .hero {
+    margin-top: 80px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 60px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}

@@ -1,0 +1,37 @@
+/* Layout */
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* Left text */
+.about-text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: #94a3b8;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Right cards */
+.about-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}

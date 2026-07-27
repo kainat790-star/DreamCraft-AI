@@ -1,0 +1,58 @@
+/* Section */
+#testimonials {
+  padding: 80px 20px;
+}
+
+/* Title */
+.testimonials-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.testimonials-subtitle {
+  text-align: center;
+  color: #cbd5e1;
+  margin-bottom: 40px;
+}
+
+/* Grid */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* 🔥 GLASS CARD (THIS WAS MISSING) */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.glass-card:hover {
+  transform: translateY(-8px);
+  border-color: #2563eb;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+}
+
+/* Text */
+.review {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* User info */
+.user-info h4 {
+  margin: 0;
+}
+
+.user-info span {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}

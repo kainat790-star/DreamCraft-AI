@@ -1,0 +1,44 @@
+.features-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.features-subtitle {
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+/* Grid Layout */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Card */
+.feature-card {
+  text-align: center;
+}
+
+/* Icon */
+.feature-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
