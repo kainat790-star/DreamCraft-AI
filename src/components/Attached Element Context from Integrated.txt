@@ -1,0 +1,82 @@
+Attached Element Context from Integrated Browser
+
+Element: button.btn-primary
+
+URL: http://localhost:5173/
+
+HTML Path: div#root > div.app > div.app > section#dashboard.dashboard-section.fade-up > div.container.dashboard-container > div.dashboard-grid > div.glass-card.dashboard-card > button.btn-primary
+
+Outer HTML:
+```html
+<button class="btn-primary">View Progress</button>
+```
+
+Dimensions:
+- top: 332px
+- left: 471px
+- width: 96px
+- height: 24px
+
+CSS:
+```css
+* { margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+button { font-family: inherit;
+  cursor: pointer; }
+
+/* Pseudo-elements */
+::selection { background: #2563eb;
+  color: #ffffff; }
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-thumb { background: #2563eb;
+  border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #1d4ed8; }
+::-webkit-scrollbar-track { background: #0f172a; }
+
+/* Inherited */
+.dashboard-card { text-align: left }
+.dashboard-section { text-align: center }
+body { font-family: "Poppins", sans-serif; color: #ffffff; line-height: 1.6 }
+body { font-family: "Poppins", sans-serif; color: white }
+
+/* Resolved values */
+margin: 0px;
+padding: 0px;
+border-radius: 0px;
+border: 2px /*UA*/ outset /*UA*/ rgb(0, 0, 0) /*UA*/;
+appearance: auto /*UA*/;
+background-attachment: scroll;
+background-clip: border-box;
+background-color: rgb(240, 240, 240);
+background-image: none;
+background-origin: padding-box;
+background-position-x: 0%;
+background-position-y: 0%;
+background-repeat: repeat;
+background-size: auto;
+border-image-outset: 0 /*UA*/;
+border-image-repeat: stretch /*UA*/;
+border-image-slice: 100% /*UA*/;
+border-image-source: none /*UA*/;
+border-image-width: 1 /*UA*/;
+box-sizing: border-box;
+color: rgb(0, 0, 0);
+cursor: pointer;
+display: inline-block;
+font-family: Poppins, sans-serif;
+height: 24px;
+letter-spacing: normal /*UA*/;
+line-height: normal;
+padding-block-end: 0px /*UA*/;
+padding-block-start: 0px /*UA*/;
+padding-inline-end: 0px /*UA*/;
+padding-inline-start: 0px /*UA*/;
+text-align: center;
+text-indent: 0px /*UA*/;
+text-rendering: auto /*UA*/;
+text-shadow: none /*UA*/;
+text-transform: none /*UA*/;
+width: 96.4375px;
+word-spacing: 0px /*UA*/;
+```

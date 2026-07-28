@@ -1,42 +1,26 @@
 import "./App.css";
-import { useEffect } from "react";
-
-import Hero from "./components/Hero";
-import Features from "./components/Features";
-import Testimonials from "./components/Testimonials";
-import Pricing from "./components/Pricing";
-import AIChat from "./components/AIChat";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SignupPage";
+import CheckoutPage from "./pages/CheckoutPage";
+import PageNotFound from "./components/PageNotFound";
 
 function App() {
-  useEffect(() => {
-    const elements = document.querySelectorAll(".fade-up");
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-
-    elements.forEach((el) => observer.observe(el));
-  }, []);
-
   return (
     <div className="app">
-      {/* Glow Background */}
+      <Navbar />
       <div className="glow glow1"></div>
       <div className="glow glow2"></div>
-
-      <Hero />
-      <Features />
-      <Testimonials />
-      <Pricing />
-      <AIChat />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
       <Footer />
     </div>
   );
