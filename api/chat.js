@@ -4,7 +4,15 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { goal } = req.body;
+    const { goal, level, studyTime, duration, prompt } = req.body;
+
+    if (!goal || !goal.trim()) {
+      return res.status(400).json({ error: "Learning goal is required." });
+    }
+
+    const userPrompt = `Create a ${duration} learning roadmap to become a ${goal} for a ${level} learner practicing ${studyTime} daily.${
+      prompt ? ` Also include: ${prompt}` : ""
+    }`;
 
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
@@ -16,16 +24,23 @@ export default async function handler(req, res) {
         model: "deepseek/deepseek-r1-0528:free",
         messages: [
           {
+            role: "system",
+            content:
+              "You are an expert learning roadmap generator. Provide clear, practical learning paths with milestones, tools, and study recommendations.",
+          },
+          {
             role: "user",
-            content: `Create a roadmap for: ${goal}`,
+            content: userPrompt,
           },
         ],
+        max_tokens: 800,
+        temperature: 0.7,
       }),
     });
 
     const data = await response.json();
 
-    return res.status(200).json(data);
+    return res.status(response.ok ? 200 : 500).json(data);
   } catch (err) {
     return res.status(500).json({
       error: err.message,
