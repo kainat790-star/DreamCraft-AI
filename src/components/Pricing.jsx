@@ -1,6 +1,8 @@
 import "./Pricing.css";
+import { useNavigate } from "react-router-dom";
 
 function Pricing() {
+  const navigate = useNavigate();
   const plans = [
     {
       name: "Starter",
@@ -12,6 +14,7 @@ function Pricing() {
         "Community access",
       ],
       highlight: false,
+      action: "/signup",
     },
     {
       name: "Pro",
@@ -24,6 +27,7 @@ function Pricing() {
         "Priority support",
       ],
       highlight: true,
+      action: "/checkout",
     },
     {
       name: "Premium",
@@ -36,6 +40,7 @@ function Pricing() {
         "Custom goal optimization",
       ],
       highlight: false,
+      action: "/checkout",
     },
   ];
 
@@ -68,7 +73,10 @@ function Pricing() {
                 ))}
               </ul>
 
-              <button className="btn-primary">
+              <button
+                className="btn-primary"
+                onClick={() => navigate(plan.action)}
+              >
                 Get Started
               </button>
             </div>

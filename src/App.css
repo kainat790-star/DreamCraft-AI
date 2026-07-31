@@ -36,17 +36,31 @@ body {
 section {
   position: relative;
   z-index: 1;
-  padding: 80px 20px;
+  padding: 100px 20px;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(8px);
+}
+
+section:first-of-type {
+  background: transparent;
+}
+
+section + section {
+  margin-top: 100px;
+}
+
+section:not(:first-of-type) {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 /* ✨ Animation */
 .fade-up {
-  opacity: 0;
-  transform: translateY(40px);
+  opacity: 1;
+  transform: none;
   transition: 0.8s ease;
 }
 
 .fade-up.show {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }

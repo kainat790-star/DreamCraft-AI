@@ -1,10 +1,10 @@
 import "./Hero.css";
 
 function Hero() {
-  const scrollToAI = () => {
-    const section = document.getElementById("ai-chat");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
@@ -21,18 +21,11 @@ function Hero() {
       </p>
 
       <div className="hero-buttons">
-        <button className="hero-btn primary" onClick={scrollToAI}>
+        <button className="hero-btn primary" onClick={() => scrollToSection("ai-chat")}>
           🚀 Generate My Roadmap
         </button>
 
-        <button
-          className="hero-btn secondary"
-          onClick={() =>
-            document
-              .getElementById("features")
-              ?.scrollIntoView({ behavior: "smooth" })
-          }
-        >
+        <button className="hero-btn secondary" onClick={() => scrollToSection("features")}>
           Explore Features
         </button>
       </div>

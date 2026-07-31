@@ -1,15 +1,14 @@
 # DreamCraft AI 🚀
 
-DreamCraft AI is an AI-powered learning roadmap generator built with React and Vite. It helps users generate personalized learning plans using AI based on their goals, experience level, and study schedule.
+DreamCraft AI is an AI-powered learning roadmap generator built with React and Vite. It helps users generate personalized learning plans using AI based on goals, experience level, study time, and learning duration.
 
 ## ✨ Features
 
-- AI Roadmap Generator
+- AI roadmap generation
 - Personalized learning plans
 - Beginner-friendly interface
-- Responsive design
-- Modern React UI
-- Fast performance with Vite
+- Responsive layout
+- Fast Vite-powered performance
 
 ## 🛠️ Tech Stack
 
@@ -22,14 +21,19 @@ DreamCraft AI is an AI-powered learning roadmap generator built with React and V
 ## 📂 Project Structure
 
 ```
-src/
- ├── components/
- ├── App.jsx
- ├── main.jsx
- └── App.css
-
-api/
- └── chat.js
+DreamCraft-AI/
+├── api/
+│   └── chat.js
+├── public/
+├── src/
+│   ├── components/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── package.json
+├── vite.config.js
+└── README.md
 ```
 
 ## 🚀 Installation
@@ -41,22 +45,15 @@ npm run dev
 
 ## 🔑 Environment Variables
 
-Create a `.env` file:
+Create a `.env` file at the project root:
 
 ```env
-VITE_OPENROUTER_API_KEY=YOUR_API_KEY
+VITE_OPENROUTER_API_KEY=YOUR_OPENROUTER_API_KEY
 ```
 
-> For production, use server-side environment variables instead of exposing API keys in the client.
+> Keep API keys server-side when deploying. On Vercel, configure environment variables in the project settings.
 
-## 📸 Screenshots
+## 👩‍💻 Author
 
-Add screenshots of:
+DreamCraft AI is built for learning and personal development.
 
-- Home Page
-- AI Roadmap Generator
-- Generated AI Response
-
-## 👨‍💻 Author
-
-Developed as a React + AI learning project.s
