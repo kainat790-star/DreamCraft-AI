@@ -3,34 +3,34 @@ import "./Features.css";
 function Features() {
   const features = [
     {
-      title: "AI-Powered Roadmaps",
-      desc: "Get personalized step-by-step plans to achieve your goals faster with smart AI guidance.",
-      icon: "🚀",
+      icon: "🤖",
+      title: "AI Roadmap Generator",
+      desc: "Generate a personalized learning roadmap based on your goals, experience level, and study schedule.",
     },
     {
-      title: "Progress Tracking",
-      desc: "Track your daily progress and stay consistent with real-time updates and insights.",
-      icon: "📊",
-    },
-    {
-      title: "Smart Reminders",
-      desc: "Never miss a task with intelligent reminders designed to keep you on track.",
-      icon: "⏰",
-    },
-    {
-      title: "Goal Optimization",
-      desc: "Our AI continuously improves your roadmap based on your performance.",
       icon: "🎯",
+      title: "Personalized Learning Plans",
+      desc: "Receive a customized weekly learning plan designed specifically for your chosen career path.",
     },
     {
-      title: "Community Support",
-      desc: "Join like-minded people and grow together with shared motivation.",
-      icon: "🤝",
+      icon: "📚",
+      title: "Smart Resource Recommendations",
+      desc: "Discover high-quality free courses, documentation, and tutorials recommended by AI.",
     },
     {
-      title: "Secure & Private",
-      desc: "Your data is protected with top-level security and privacy standards.",
-      icon: "🔒",
+      icon: "💻",
+      title: "Practice Projects",
+      desc: "Build real-world projects at every stage to strengthen your portfolio and practical skills.",
+    },
+    {
+      icon: "🚀",
+      title: "Career Guidance",
+      desc: "Get AI-powered career advice, interview preparation tips, and technology recommendations.",
+    },
+    {
+      icon: "⚡",
+      title: "Instant AI Responses",
+      desc: "Generate structured learning roadmaps and guidance in just a few seconds.",
     },
   ];
 
@@ -38,19 +38,20 @@ function Features() {
     <section id="features">
       <div className="container">
         <h2 className="features-title">
-          Powerful <span className="gradient-text">Features</span>
+          Why Choose <span className="gradient-text">DreamCraft AI?</span>
         </h2>
 
         <p className="features-subtitle">
-          Everything you need to turn your dreams into reality with AI
+          An AI-powered platform that helps you learn smarter with personalized
+          roadmaps, practical projects, and career-focused guidance.
         </p>
 
         <div className="features-grid">
-          {features.map((item, index) => (
+          {features.map((feature, index) => (
             <div className="glass-card feature-card fade-up" key={index}>
-              <div className="feature-icon">{item.icon}</div>
-              <h3>{item.title}</h3>
-              <p>{item.desc}</p>
+              <div className="feature-icon">{feature.icon}</div>
+              <h3>{feature.title}</h3>
+              <p>{feature.desc}</p>
             </div>
           ))}
         </div>

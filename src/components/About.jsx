@@ -10,7 +10,10 @@ function About() {
           <h2>
             About <span className="gradient-text">DreamCraft AI</span>
           </h2>
-
+<p className="ai-subtitle">
+  Generate a personalized AI-powered learning roadmap based on your goals,
+  experience level, available study time, and preferred duration.
+</p>
           <p>
             DreamCraft AI is designed to help you turn your dreams into reality
             with the power of artificial intelligence. We provide personalized

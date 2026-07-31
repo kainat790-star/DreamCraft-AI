@@ -1,16 +1,62 @@
-# React + Vite
+# DreamCraft AI 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DreamCraft AI is an AI-powered learning roadmap generator built with React and Vite. It helps users generate personalized learning plans using AI based on their goals, experience level, and study schedule.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- AI Roadmap Generator
+- Personalized learning plans
+- Beginner-friendly interface
+- Responsive design
+- Modern React UI
+- Fast performance with Vite
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- CSS
+- OpenRouter API
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+ ├── components/
+ ├── App.jsx
+ ├── main.jsx
+ └── App.css
+
+api/
+ └── chat.js
+```
+
+## 🚀 Installation
+
+```bash
+npm install
+npm run dev
+```
+
+## 🔑 Environment Variables
+
+Create a `.env` file:
+
+```env
+VITE_OPENROUTER_API_KEY=YOUR_API_KEY
+```
+
+> For production, use server-side environment variables instead of exposing API keys in the client.
+
+## 📸 Screenshots
+
+Add screenshots of:
+
+- Home Page
+- AI Roadmap Generator
+- Generated AI Response
+
+## 👨‍💻 Author
+
+Developed as a React + AI learning project.s
